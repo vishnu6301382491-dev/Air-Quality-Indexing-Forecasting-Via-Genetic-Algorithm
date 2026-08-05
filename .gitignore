@@ -1,0 +1,32 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Node dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/build/
+
+# Environment and sensitive credential files
+.env
+*.env
+backend/.env
+frontend/.env
+firebase-credentials.json
+backend/firebase-credentials.json
+*.pem
+
+# Python cache & build
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Logs
+*.log
+
+# Operating System files
+.DS_Store
+Thumbs.db

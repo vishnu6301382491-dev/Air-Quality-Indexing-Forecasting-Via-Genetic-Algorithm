@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Air-Quality-Indexing-Forecasting-Via-Genetic-Algorithm/static/css/main.b4be49e9.css",
+    "main.js": "/Air-Quality-Indexing-Forecasting-Via-Genetic-Algorithm/static/js/main.192f6d22.js",
+    "index.html": "/Air-Quality-Indexing-Forecasting-Via-Genetic-Algorithm/index.html",
+    "main.b4be49e9.css.map": "/Air-Quality-Indexing-Forecasting-Via-Genetic-Algorithm/static/css/main.b4be49e9.css.map",
+    "main.192f6d22.js.map": "/Air-Quality-Indexing-Forecasting-Via-Genetic-Algorithm/static/js/main.192f6d22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4be49e9.css",
+    "static/js/main.192f6d22.js"
+  ]
+}
