@@ -1,0 +1,277 @@
+/* ========== Prediction Page ========== */
+
+.prediction-page {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Prediction Comparison */
+.prediction-comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.comparison-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    border: 2px solid var(--border);
+    border-radius: 24px;
+    padding: 40px 50px;
+    text-align: center;
+    min-width: 250px;
+    transition: all 0.3s ease;
+}
+
+.comparison-card:hover {
+    transform: translateY(-5px);
+}
+
+.comparison-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.comparison-value {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.comparison-category {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* AQI Color States */
+.comparison-card.good {
+    border-color: var(--aqi-good);
+}
+
+.comparison-card.good .comparison-value {
+    color: var(--aqi-good);
+}
+
+.comparison-card.good .comparison-category {
+    background: rgba(34, 197, 94, 0.2);
+    color: var(--aqi-good);
+}
+
+.comparison-card.moderate {
+    border-color: var(--aqi-moderate);
+}
+
+.comparison-card.moderate .comparison-value {
+    color: var(--aqi-moderate);
+}
+
+.comparison-card.moderate .comparison-category {
+    background: rgba(234, 179, 8, 0.2);
+    color: var(--aqi-moderate);
+}
+
+.comparison-card.sensitive {
+    border-color: var(--aqi-sensitive);
+}
+
+.comparison-card.sensitive .comparison-value {
+    color: var(--aqi-sensitive);
+}
+
+.comparison-card.sensitive .comparison-category {
+    background: rgba(249, 115, 22, 0.2);
+    color: var(--aqi-sensitive);
+}
+
+.comparison-card.unhealthy {
+    border-color: var(--aqi-unhealthy);
+}
+
+.comparison-card.unhealthy .comparison-value {
+    color: var(--aqi-unhealthy);
+}
+
+.comparison-card.unhealthy .comparison-category {
+    background: rgba(239, 68, 68, 0.2);
+    color: var(--aqi-unhealthy);
+}
+
+.comparison-card.very-unhealthy {
+    border-color: var(--aqi-very-unhealthy);
+}
+
+.comparison-card.very-unhealthy .comparison-value {
+    color: var(--aqi-very-unhealthy);
+}
+
+.comparison-card.very-unhealthy .comparison-category {
+    background: rgba(168, 85, 247, 0.2);
+    color: var(--aqi-very-unhealthy);
+}
+
+.comparison-card.hazardous {
+    border-color: var(--aqi-hazardous);
+}
+
+.comparison-card.hazardous .comparison-value {
+    color: var(--aqi-hazardous);
+}
+
+.comparison-card.hazardous .comparison-category {
+    background: rgba(153, 27, 27, 0.3);
+    color: #fca5a5;
+}
+
+.comparison-card.prediction {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.1));
+}
+
+.comparison-arrow {
+    font-size: 32px;
+    color: var(--text-muted);
+}
+
+/* Model Section */
+.model-section {
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.model-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.model-header .section-title {
+    margin-bottom: 0;
+}
+
+.model-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.model-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.model-label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.model-value {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.model-value.success {
+    color: var(--aqi-good);
+}
+
+.model-value.warning {
+    color: var(--aqi-moderate);
+}
+
+/* Algorithm Section */
+.algorithm-section {
+    margin-bottom: 40px;
+}
+
+.algorithm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.algo-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.algo-card:hover {
+    border-color: var(--accent-purple);
+}
+
+.algo-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.algo-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.algo-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Chart Section */
+.chart-section {
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.chart-container {
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .prediction-comparison {
+        flex-direction: column;
+    }
+
+    .comparison-card {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .comparison-arrow {
+        transform: rotate(90deg);
+    }
+
+    .comparison-value {
+        font-size: 48px;
+    }
+
+    .model-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
